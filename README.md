@@ -50,4 +50,7 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 - Immutable data structures
 
 
+#### License
+
+[MIT](#LICENSE) License
 
