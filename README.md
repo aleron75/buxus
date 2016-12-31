@@ -1,5 +1,7 @@
 ## Buxus - A PHP Command Bus
 
+[![Build Status](https://travis-ci.org/0x13a/buxus.svg?branch=master)](https://travis-ci.org/0x13a/buxus)
+
 #### Why a PHP Command Bus
 
 - Keeps Application logic separated from Domain logic
@@ -7,9 +9,15 @@
 - Command Handlers enforce Single Responsibility Principle
 - Can be easily extended (decorated)
 
+#### Prerequisites
+
+- PHP version >= 7.x
+
 #### Getting started with the Command Bus
 
 ```php
+<?php
+
 $commandHandlerMap = [
     CreateProductCommand::class => new CreateProductHandler()
 ];
@@ -24,6 +32,8 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 #### Extending Command Bus funcionality through Decorator
 
 ```php
+<?php
+
 $commandHandlerMap = [
     CreateProductCommand::class => new CreateProductHandler()
 ];
