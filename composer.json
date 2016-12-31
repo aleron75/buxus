@@ -1,0 +1,23 @@
+{
+    "name": "0x13a/buxus",
+    "description": "A framework-agnostic, minimal & lightweight PHP command bus",
+    "authors": [
+        {
+            "name": "Diego Mariani",
+            "email": "diego.mariani@mail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Buxus\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Buxus\\Test\\": "test"
+        }
+    }
+}
