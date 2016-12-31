@@ -1,6 +1,8 @@
 {
     "name": "0x13a/buxus",
     "description": "A framework-agnostic, minimal & lightweight PHP command bus",
+    "keywords": ["command","command bus","php command","php commmand bus"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Diego Mariani",
