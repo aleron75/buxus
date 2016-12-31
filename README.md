@@ -62,5 +62,5 @@ $loggedCommandBus->dispatch(new CreateProductCommand('beer'));
 
 #### License
 
-[MIT](#LICENSE) License
+Buxus is licensed under the MIT license. See [License File](LICENSE) for more information
 
