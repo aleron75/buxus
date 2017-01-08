@@ -24,6 +24,6 @@ class StandardCommandHandlerLocatorTest extends \PHPUnit_Framework_TestCase
             ->willReturn($commandHandler);
         $commandHandlerLocator = new StandardCommandHandlerLocator($commandHandlerMap);
 
-        $this->assertSame($commandHandlerLocator->getHandler($command), $commandHandler);
+        $this->assertSame($commandHandler, $commandHandlerLocator->getHandler($command));
     }
 }

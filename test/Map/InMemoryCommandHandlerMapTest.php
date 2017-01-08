@@ -20,6 +20,6 @@ class InMemoryCommandHandlerMapTest extends \PHPUnit_Framework_TestCase
     {
         $inMemoryCommandHandlerMap = new InMemoryCommandHandlerMap(['Command' => 'CommandHandler']);
 
-        $this->assertSame($inMemoryCommandHandlerMap->getCommand('Command'), 'CommandHandler');
+        $this->assertSame('CommandHandler', $inMemoryCommandHandlerMap->getCommand('Command'));
     }
 }
